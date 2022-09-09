@@ -1,0 +1,34 @@
+{
+  "filters": {},
+  "rules": {
+    "preset-ja-spacing": {
+      "ja-no-space-between-full-width": false,
+             "ja-space-between-half-and-full-width": {
+                 "space": "always"
+             }
+    },
+    "preset-jtf-style": true,
+    "preset-ja-technical-writing": {
+          "no-exclamation-question-mark": {
+            // allow word list that support RegExp-like String
+            "allow": [
+                "Yahoo!"
+            ],
+            // allow to use !
+            "allowHalfWidthExclamation": false,
+            // allow to use ！
+            "allowFullWidthExclamation": false,
+            // allow to use ?
+            "allowHalfWidthQuestion": false,
+            // allow to use ？
+            "allowFullWidthQuestion": true
+        }
+    },
+    "spellcheck-tech-word": true,
+    "prh": {
+      "rulePaths": [
+        "node_modules/prh/prh-rules/media/WEB+DB_PRESS.yml"
+      ]
+    }
+  }
+}
