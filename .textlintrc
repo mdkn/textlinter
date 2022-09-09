@@ -7,7 +7,9 @@
                  "space": "always"
              }
     },
-    "preset-jtf-style": true,
+    "preset-jtf-style": {
+      "3.1.1.全角文字と半角文字の間": false
+    },
     "preset-ja-technical-writing": {
           "no-exclamation-question-mark": {
             // allow word list that support RegExp-like String
@@ -27,7 +29,7 @@
     "spellcheck-tech-word": true,
     "prh": {
       "rulePaths": [
-        "node_modules/prh/prh-rules/media/WEB+DB_PRESS.yml"
+        "prh/main.yml"
       ]
     }
   }

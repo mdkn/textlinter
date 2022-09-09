@@ -1,0 +1,12 @@
+version: 1
+
+rules:
+  - pattern: /基([いかきくけこ])|基ず([いかきくけこ])|もとず([いかきくけこ])/
+    expected: もとづ$1
+
+imports:
+  - path: ./files/WEB+DB_PRESS.yml
+    disableImports: true
+    # https://dev.classmethod.jp/articles/eetann-ignore-textlint-rule-prh/
+    ignoreRules:
+      - expected: 基づ$1
