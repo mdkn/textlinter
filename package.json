@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "find -E . -path \"./node_modules\" -prune -o  -type f -iregex \".*\\.(md|txt|html)\" | xargs -I@ textlint @",
+    "lint:fix": "find -E . -path \"./node_modules\" -prune -o  -type f -iregex \".*\\.(md|txt|html)\" | xargs -I@ textlint --fix @"
   },
   "keywords": [],
   "author": "",
