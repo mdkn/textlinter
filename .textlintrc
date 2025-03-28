@@ -12,17 +12,12 @@
     },
     "preset-ja-technical-writing": {
           "no-exclamation-question-mark": {
-            // allow word list that support RegExp-like String
             "allow": [
                 "Yahoo!"
             ],
-            // allow to use !
             "allowHalfWidthExclamation": false,
-            // allow to use ！
             "allowFullWidthExclamation": false,
-            // allow to use ?
             "allowHalfWidthQuestion": false,
-            // allow to use ？
             "allowFullWidthQuestion": true
         }
     },
